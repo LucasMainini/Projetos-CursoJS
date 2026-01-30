@@ -1,0 +1,45 @@
+body {
+font-size: normal Arial;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #87CEEB, #FFD700); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+}
+
+
+header {
+color: white;
+text-align: center;
+}
+
+section {
+
+ background-color: white;
+ border-radius: 10px;
+ padding: 15px;
+ width: 500px;
+ margin: auto;
+ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+}
+
+div {
+    text-align: center;
+    padding: 5px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-size: Italic;
+
+}
+
+#imagem {
+  width: 450px;           /* define largura fixa */
+  height: 200px;          /* define altura fixa para círculo */
+  object-fit: cover;      /* ajusta a imagem para preencher sem deformar */
+  border-radius: 50%;     /* deixa a imagem redonda */
+  display: block;         /* ajuda a centralizar */
+  margin: 20px auto;      /* centraliza horizontalmente e dá espaçamento */
+}

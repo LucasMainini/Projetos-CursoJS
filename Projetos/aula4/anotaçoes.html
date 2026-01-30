@@ -1,0 +1,128 @@
+RELACIONAIS
+
+> MAIOR
+< MENOR
+>= MAIOR OU IGUAL
+<= MENOR OU IGUAL
+== IGUAL LEBRANDO QUANDO TEMOS SO UM = LEMOS (RECEBE) QUANDO TEMOS == LEMOS (IGUAL)
+!= DIFERENTE
+
+5 > 2 = TRUE
+7 < 4 = FALSE
+8 >= 8 = TRUE
+9 <= 7 = FALSE
+5 == 5 TRUE
+4 != 4 FALSE
+
+QUANDO TEMOS OPERADORES RELACIONAIS E ARITMETICOS NA MESMA LINHA POR EXEOMPLO  
+
+a = 10
+b = 20
+
+
+a <= b - 10 = true
+
+FAZEMOS PRIMEIRO O ARITMETICOS  ENTAO B - 10 (20 - 10 = 10 ) DEPOIS FAZEMOS OS RELACIONAIS 10 <= a true
+
+
+IDENTIDADE
+
+5 == 5 true
+5 == '5' true
+5 === '5' false
+quando uso === testo se ele e do mesmo tipo no exemplo temos 5 numerico e 5 como string os dois nao sao do mesmo tipo entao e FALSE
+testa pra ver se e identico ali 5 tem o mesmo valor mas nao o mesmo tipo declarado um e string outro e number
+
+LOGICOS
+
+! NEGAÇAO
+&& CONJUNÇAO
+|| DISJUNÇAO
+
+
+! ou vai ser true ou false
+
+
+&& ele é um operador binario por exemplo
+
+true && true = true
+true && false = false 
+false && true = false
+false && false = false 
+
+exemplo da caneta se eu pedir uma caneta azul e uma preta so vai ser verdadeiro quando eu receber uma azul e uma preta 
+se vim com uma azul e uma vermelha e false so com uma azul tambem e false so vai ser verdadeirose vir com oq eu pedir
+
+
+
+||
+
+
+true || true = true
+true || false = true
+false || true = true
+false || false = false 
+
+aqui ja é DIFERENTE basta um ser verdadeiro que vai dar true por exemplo quero a caneta preta e azul 
+se vc cim com as duas true se vc cim so com a preta true tambem 
+
+
+
+agora um exemplo!!!!!!!
+
+var a = 5
+var b = 8
+
+
+a > b && b % == 0 
+
+primeiro faço os aperadores ARITMETICOS 
+segundo os operadores RELACIONAIS
+e DEPOIS os operadores LOGICOS
+
+entao primeiro 8 % 2 == 0 esse lado deu true pq o resto de 8/2 e 0 e 0 == 0 0 e igual a 0
+
+agora fazemos a > b que e false 
+
+
+entao 
+
+(false)         (true)
+a > b    &&    b % == 0 
+
+resultado false pois false com true e false quando usamos &&
+
+agora se mudarmos para || vai ser true pq quando temos um true o resultado final e true com ||
+
+
+
+como fica a ordem de precedencia agora
+
+
+() ** / 
+
+> < >=
+
+!
+
+&&
+
+||
+
+ 
+
+OPERADOR TERNARIO
+
+? 
+:
+
+
+ternario pq tem 3 partes 
+
+teste ? true : false 
+
+por exemplo 
+media >= 7.0 ? "aprovado" : "reprovado"
+
+aqui e basico se a media for maior ou igual a 7 aprovado se for menor e reprovado
+

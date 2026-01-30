@@ -1,0 +1,25 @@
+DOM = DOCUMENT OBJECT MODEL 
+modelo de objetos para documentos
+
+
+
+ARVORE DOM
+
+WINDOW -> LOCATION DOCUMENT HISTORY
+
+DENTRO DO DOCUMENT TEMOS O HTML
+
+DENTRO DO HTML TEMOS O 
+      HEAD BODY
+
+
+HEAD -> META TITLE
+
+BODY -> H1 P DIV
+
+
+        POR MARCA
+getElementsByTagName() 
+
+
+        POR ID

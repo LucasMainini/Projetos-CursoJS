@@ -1,27 +1,36 @@
-function carregar() {
+function contar() {
+    let ini = document.getElementById('txti')
+    let fim = document.getElementById('txtf')
+    let passo = document.getElementById('txtp')
+    let res = document.getElementById('res')
 
-var msg = window.document.getElementById('msg')
-var img = window.document.getElementById('imagem')
-var data = new Date()
-var hora = data.getHours()
-var minutos = data.getMinutes()
-msg.innerHTML =  `<strong>Agora são ${hora}:${minutos} horas!</strong>`
- if (hora >= 0 && hora < 12){
-    // bom dia
-    img.src = 'fotos/manha.png'
-    document.body.style.background = 'linear-gradient(to bottom, #87CEEB, #A7DFFF, #FFD700)';
+    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+        res.innerHTML = '⚠️ Impossível contar!'
+    } else {
+        res.innerHTML = 'Contando:<br><br>'
 
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
 
-} else if (hora >= 12 && hora < 20){
-    // boa tarde
-    img.src = 'fotos/tarde.png'
-    document.body.style.background = 'linear-gradient(to bottom, #FF4500, #FF8C00)';
-} else {
-    //boa noite
-    img.src = 'fotos/noite.png'
-    document.body.style.background = 'radial-gradient(circle, #2C2F4A, #000000)';
+        if (p <= 0) {
+            alert('Passo inválido! Considerando passo 1')
+            p = 1
+        }
 
+        // 👉 Contagem crescente
+        if (i < f) {
+            for (let c = i; c <= f; c += p) {
+                res.innerHTML += `${c} 👉 `
+            }
+        } 
+        // 👉 Contagem regressiva
+        else {
+            for (let c = i; c >= f; c -= p) {
+                res.innerHTML += `${c} 👉 `
+            }
+        }
 
-}
-
+        res.innerHTML += '🏁'
+    }
 }

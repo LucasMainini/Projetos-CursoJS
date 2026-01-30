@@ -1,0 +1,93 @@
+Operadores
+
+////////////////////
+Aritmeticos
+atribuiçao
+relacionais
+logicos
+ternario
+//////////////////
+
+Aritmeticos
+Operador usado para fazer calculo sao eles
+
++ adiçao
+- subtraçao
+* mutiplicaçao
+/ divisao com numeros reais contendo virgula por exemplo 5/2 = 2,5
+% resto da divisao inteira por exemplo 5%2
+
+5 |_2_
+*1*   2
+quando chega a hora de colocar a virgula ele para e pega oq sobra que seria o *1*
+sendo assim 5%2 = 1
+
+** operador da potencia por exemplo 5 ** 2 = 25 que e 5 ao quadrado 5*5
+
+Na mutiplicaçao e divisao quando vou somar e dividir na mesma conta por exemplo 5 + 3 / 2 = 6,5 pois primeiro faz a divisao depois a adiçao.
+para fazer essa conta funcionar eu teria que colocar (5+3) / 2 = 4 usando o parenteses () ele da prioridade para a adiçao e faz ela primeiro para depois dividir
+
+********************************************
+ORDEM DE PRECEDENCIA (prioridades):
+
+primeiro temos ()
+depois a **
+depois entram a * / %
+e por fim + -
+
+
+********************************************
+
+ATRIBUIÇAO SIMPLES
+
+aqui ultizamos as variaveis
+
+var a = 5 + 3 = 8
+var b = a % 5 = 3 (lembrando o 3 e o resto da divisao)
+
+
+var c 5 * b ** 2 = 45 
+lembrando que aqui foi feito da seguinte maneira b ** 2 (ORDEM DE PRECEDENCIA) * 5 OU SEJA B=3   3 ** 2 = 9 DEPOIS 5 * 9 = 45
+ENTAO PRIMEIRO FEZ O ** PELA ORDEM DE PRECEDENCIA E DEPOIS A mutiplicaçao
+
+var d = 10 - a / 2 = 6
+primeiro faz a divisao depois a subtraçao
+
+var e 6 * 2 / d = 2
+ta e agora qual é a ordem?
+e oq aparece primeiro entao 6 * 2 = 12 / d = 2
+
+var f b % e + 4 / e 
+aqui seguimos a mesma ordem primeiro o b % e = 1 depois fazemos a divisao 4 / 2 (valor de e) = 2
+depois pegamos o 1 resultado da primeira e fazemos + 2 ou seja 1 + 2 = 3
+
+b % e + 4 / e = 3
+
+
+********************************************
+
+AUTO ATRIBUIÇOES
+var n = 3 
+n = n + 4
+
+a auto atribuiçao ele substitui o valor por exemplo n = 3
+na conta n = n + 4 primeiro faz a soma entao 3 + 4 = 7 depois n vai receber 7 
+Ou seja n vai deixar de ser 4 e passar a ser 7
+
+para simplificar podemos colocar 
+n += 4 que vai dar no mesmo mais vai ficar mais simplificado a conta
+podemos usar ele com todos os operadores 
++ ( n += 4)
+- ( n -= 4)
+* ( n *= 4)
+/ ( n /= 4)
+** ( n **= 4) 
+% ( n %= 4)
+
+********************************************
+
+INCREMENTO
+
+aqui podemos simplic a auto atribuiçao por exemplo podemos trocar
+x += 1 por x ++
+x -= 1 por x --

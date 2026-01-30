@@ -8,25 +8,28 @@
 </head>
 <body>
     <header>
-        <h1>Super Contador</h1>
+        <h1>Analisador de Numeros</h1>
     </header>
     <section>
 
-        <div id="dados">
+        <div >
+            <p>Numero entre (1 a 100)</p> <input type="number" placeholder="Digite um Numero" name="numeros" id="txtn">
+            <input type="button" value="adicionar" onclick="adicionar()">
+            <br> 
+            <br>
+                <select id="list" size="6"></select>
+            <br>
+                <input type="button" value="finalizar" onclick="fim()">
 
-           <p>Inicio: </p> <input type="number" placeholder="txt3" name="ini" id="txti">
-           <p>Fim: </p> <input type="number" placeholder="txt2" name="end" id="txtf">
-           <p>Passo: </p> <input type="number" placeholder="txt" name="pass" id="txtp">
-            <p><input type="button" value="contar" onclick="contar()"></p>
-
+    
         </div>
 
 
         <div id="res">
 
-            Preparando a contagem...
-        
+
         </div>
+
     </section>
     <footer>
         <p>&copy; CursoEmVideo</p>

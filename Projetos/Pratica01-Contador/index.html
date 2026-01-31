@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -12,13 +12,17 @@
     </header>
     <section>
 
-        <div >
+        <div id="dados">
 
-        
+           <p>Inicio: </p> <input type="number" placeholder="Inicio" name="ini" id="txti">
+           <p>Fim: </p> <input type="number" placeholder="Fim" name="end" id="txtf">
+           <p>Passo: </p> <input type="number" placeholder="Passos" name="pass" id="txtp">
+            <p><input type="button" value="contar" onclick="contar()"></p>
+
         </div>
 
 
-        <div >
+        <div id="res">
 
             Preparando a contagem...
         
